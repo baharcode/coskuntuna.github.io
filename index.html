@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COSKUNTUNA — 3D Design Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <span class="nav-logo" id="navLogo">COSKUNTUNA</span>
+  <ul class="nav-links">
+    <li><a id="nav-home"      data-page="home">Home</a></li>
+    <li><a id="nav-portfolio" data-page="portfolio">Portfolio</a></li>
+    <li><a id="nav-about"     data-page="about">About</a></li>
+    <li><a id="nav-contact"   data-page="contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ====== HOME -->
+<div id="page-home" class="page active">
+  <section class="hero">
+    <div class="hero-left">
+      <p class="hero-eyebrow">Design Studio</p>
+      <h1 class="hero-title">Crafting <br>Digital<em>Worlds</em></h1>
+      <p class="hero-desc">3D assets and pixel art.</p>
+      <div class="hero-actions">
+        <span class="btn-primary" id="heroPortfolioBtn">View Portfolio</span>
+        <span class="btn-ghost" id="heroContactBtn">Start a Project</span>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-card">
+        <div class="fill ph1"></div>
+        <span class="hero-img-label">Fabric</span>
+      </div>
+      <div class="hero-img-card">
+        <div class="fill ph2"></div>
+        <span class="hero-img-label">3D</span>
+      </div>
+      <div class="hero-img-card">
+        <div class="fill ph3"></div>
+        <span class="hero-img-label">Pixel Art</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-featured">
+    <div class="section-header">
+      <h2 class="section-title reveal">Selected<br><em style="font-style:italic;font-family:'Cormorant Garamond',serif;">Works</em></h2>
+      <span class="section-link" id="viewAllBtn">View All →</span>
+    </div>
+    <div class="featured-grid">
+      <div class="work-card reveal">
+        <div class="aspect">
+          <div class="work-card-inner wc1"></div>
+          <div class="work-card-overlay"></div>
+          <div class="work-card-info">
+            <div class="work-card-cat">Clothes / Fabric</div>
+            <div class="work-card-title">Placeholder for Portfolio Item</div>
+          </div>
+        </div>
+      </div>
+      <div class="work-card reveal" style="transition-delay:0.1s">
+        <div class="aspect">
+          <div class="work-card-inner wc2"></div>
+          <div class="work-card-overlay"></div>
+          <div class="work-card-info">
+            <div class="work-card-cat">3D Assets</div>
+            <div class="work-card-title">Placeholder for Portfolio Item</div>
+          </div>
+        </div>
+      </div>
+      <div class="work-card reveal" style="transition-delay:0.2s">
+        <div class="aspect">
+          <div class="work-card-inner wc3"></div>
+          <div class="work-card-overlay"></div>
+          <div class="work-card-info">
+            <div class="work-card-cat">Pixel Art</div>
+            <div class="work-card-title">Placeholder for Portfolio Item</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">COSKUNTUNA</div>
+    <div class="footer-copy">© 2026 Coskuntuna. All rights reserved.</div>
+  </footer>
+</div>
+
+<!-- ====== PORTFOLIO ====== -->
+<div id="page-portfolio" class="page">
+  <div class="portfolio-hero">
+    <div class="page-eyebrow">Works</div>
+    <h1 class="page-title">Every detail,<br><em style="font-style:italic;font-family:'Cormorant Garamond',serif;">crafted.</em></h1>
+  </div>
+  <div class="portfolio-filters">
+    <span class="filter-label">Filter</span>
+    <button class="filter-btn active" data-cat="all">All</button>
+    <button class="filter-btn" data-cat="clothes">Clothes / Fabric</button>
+    <button class="filter-btn" data-cat="assets">3D Assets</button>
+    <button class="filter-btn" data-cat="environment">Pixel Art</button>
+    <button class="filter-btn" data-cat="other">Other</button>
+  </div>
+  <div class="portfolio-grid">
+
+    <!-- =============================================
+
+    <div class="portfolio-item" data-category="KATEGORI">
+      <div class="portfolio-item-img">
+        <img class="pimg" src="GORSEL.jpg" alt="İş Adı">
+      </div>
+      <div class="port-item-cat">KATEGORİ ADI</div>
+      <div class="port-item-title">İş Adı</div>
+      <div class="port-item-owner">-- Coskuntuna</div>
+    </div>
+
+    Kategoriler: clothes | assets | environment | other
+    ============================================= -->
+
+    <div class="portfolio-item" data-category="clothes">
+      <div class="portfolio-item-img"><div class="pimg pa2" style="width:100%;height:100%"></div></div>
+      <div class="port-item-cat">Clothes / Fabric</div>
+      <div class="port-item-title">Silk Blouse Simulation</div>
+      <div class="port-item-owner">Bahar Coskuntuna</div>
+    </div>
+    <div class="portfolio-item" data-category="clothes">
+      <div class="portfolio-item-img"><div class="pimg pa8" style="width:100%;height:100%"></div></div>
+      <div class="port-item-cat">Clothes / Fabric</div>
+      <div class="port-item-title">Velvet Drape Collection</div>
+      <div class="port-item-owner">Bahar Coskuntuna</div>
+    </div>
+    <div class="portfolio-item" data-category="assets">
+      <div class="portfolio-item-img"><div class="pimg pa1" style="width:100%;height:100%"></div></div>
+      <div class="port-item-cat">3D Assets</div>
+      <div class="port-item-title">Prop Library Vol. 1</div>
+      <div class="port-item-owner">Bahar Coskuntuna</div>
+    </div>
+    <div class="portfolio-item" data-category="assets">
+      <div class="portfolio-item-img"><div class="pimg pa4" style="width:100%;height:100%"></div></div>
+      <div class="port-item-cat">3D Assets</div>
+      <div class="port-item-title">Modular Furniture Set</div>
+      <div class="port-item-owner">Bahar Coskuntuna</div>
+    </div>
+    <div class="portfolio-item" data-category="environment">
+      <div class="portfolio-item-img"><div class="pimg pa3" style="width:100%;height:100%"></div></div>
+      <div class="port-item-cat">Pixel Art</div>
+      <div class="port-item-title">Ancient Ruins</div>
+      <div class="port-item-owner">Gokalp Coskuntuna</div>
+    </div>
+    <div class="portfolio-item" data-category="environment">
+      <div class="portfolio-item-img"><div class="pimg pa9" style="width:100%;height:100%"></div></div>
+      <div class="port-item-cat">Pixel Art</div>
+      <div class="port-item-title">Neon City Alley</div>
+      <div class="port-item-owner">Gokalp Coskuntuna</div>
+    </div>
+    <div class="portfolio-item" data-category="other">
+      <div class="portfolio-item-img"><div class="pimg pa5" style="width:100%;height:100%"></div></div>
+      <div class="port-item-cat">Other</div>
+      <div class="port-item-title">Abstract Series 01</div>
+      <div class="port-item-owner">Goktug Coskuntuna</div>
+    </div>
+    <div class="portfolio-item" data-category="clothes">
+      <div class="portfolio-item-img"><div class="pimg pa7" style="width:100%;height:100%"></div></div>
+      <div class="port-item-cat">Pixel Art</div>
+      <div class="port-item-title">Leather Jacket Study</div>
+      <div class="port-item-owner">Gokalp Coskuntuna</div>
+    </div>
+    <div class="portfolio-item" data-category="other">
+      <div class="portfolio-item-img"><div class="pimg pa6" style="width:100%;height:100%"></div></div>
+      <div class="port-item-cat">Other</div>
+      <div class="port-item-title">Motion Concept</div>
+      <div class="port-item-owner">Gokalp Coskuntuna</div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-logo">COSKUNTUNA</div>
+    <div class="footer-copy">© 2026 Coskuntuna. All rights reserved.</div>
+  </footer>
+</div>
+
+<!-- ====== ABOUT ====== -->
+<div id="page-about" class="page">
+  <div class="about-layout">
+    <div class="about-left">
+      <div class="page-eyebrow" style="margin-bottom:32px;">About</div>
+      <div class="about-portrait"></div>
+      <div style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);">Istanbul, Turkey — Warszawa, Polska</div>
+    </div>
+    <div class="about-right">
+      <div>
+        <p class="about-bio">COSKUNTUNA is a design studio specializing in game assets</p>
+        <p class="about-body"> <br><br>
+        </p>
+      </div>
+      <div>
+        <div class="services-title">What We Do</div>
+        <div class="service-line">Metahuman Clothes</div>
+        <div class="service-line">3D Assets</div>
+        <div class="service-line">Pixel Art</div>
+        <div class="service-line">Other Creative Work <span>On Request</span></div>
+      </div>
+      <div>
+        <div class="tools-title">Software &amp; Tools</div>
+        <div class="tools-list">
+          <span class="tool-tag">Blender</span>
+          <span class="tool-tag">Maya</span>
+          <span class="tool-tag">ZBrush</span>
+          <span class="tool-tag">Marvelous Designer</span>
+          <span class="tool-tag">Substance Painter</span>
+          <span class="tool-tag">Unreal Engine</span>
+          <span class="tool-tag">Aseprite</span>
+          <span class="tool-tag">Adobe Creative Suite</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-logo">COSKUNTUNA</div>
+    <div class="footer-copy">© 2026 Coskuntuna. All rights reserved.</div>
+  </footer>
+</div>
+
+<!-- ====== CONTACT ====== -->
+<div id="page-contact" class="page">
+  <div class="contact-layout">
+    <div class="contact-left">
+      <div>
+        <div class="page-eyebrow">Contact</div>
+        <h1 class="contact-big">Let's build<br>something<br><em style="font-style:italic;font-family:'Cormorant Garamond',serif;">together.</em></h1>
+      </div>
+      <div>
+        <div class="contact-info-item">
+          <div class="ci-label">General</div>
+          <a class="ci-value" href="mailto:info@coskuntuna.art">info@coskuntuna.art</a>
+        </div>
+        <div class="contact-info-item">
+          <div class="ci-label">Direct</div>
+          <a class="ci-value" href="mailto:bahar@coskuntuna.art">bahar@coskuntuna.art</a>
+        </div>
+        <div class="contact-info-item">
+          <div class="ci-label">Pixel Artist</div>
+          <a class="ci-value" href="mailto:gokalp@coskuntuna.art">gokalp@coskuntuna.art</a>
+        </div>
+        <div class="contact-info-item">
+          <div class="ci-label">Based In</div>
+          <div class="ci-value">Istanbul, Turkey / Warszawa, Polska</div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ci-label">Availability</div>
+          <div class="ci-value" style="color:var(--accent);">Open for Projects</div>
+        </div>
+      </div>
+      <div class="contact-socials">
+        <!-- Fab linkini buraya ekle: href="https://fab.com/..." -->
+        <a class="social-link" href="#" target="_blank">Fab</a>
+      </div>
+    </div>
+    <div class="contact-right">
+      <div class="contact-visual">
+        <div class="contact-visual-icon">✉</div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-logo">COSKUNTUNA</div>
+    <div class="footer-copy">© 2025 Coskuntuna. All rights reserved.</div>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+<div id="lightbox" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.9); justify-content:center; align-items:center; z-index:99999;">
+  <img id="lightbox-img" style="max-width:90%; max-height:90%;">
+</div>
+</body>
+</html>
