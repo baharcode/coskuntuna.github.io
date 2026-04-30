@@ -228,7 +228,7 @@
   .about-left { padding: 80px 60px; border-right: 1px solid var(--border); }
   .about-right { padding: 80px 60px; display: flex; flex-direction: column; gap: 60px; }
 .about-portrait {
-  width: min(60%, 420px);
+  width: max(60%, 420px);
   aspect-ratio: 3/4;
   background: linear-gradient(160deg, #2a2a2a, #1a1a1a);
   margin-bottom: 40px;
