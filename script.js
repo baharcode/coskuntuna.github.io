@@ -56,7 +56,12 @@
   // Hero butonları
   document.getElementById('heroPortfolioBtn').addEventListener('click', function () { goTo('portfolio'); });
   document.getElementById('heroContactBtn').addEventListener('click',   function () { goTo('contact'); });
-  document.getElementById('viewAllBtn').addEventListener('click',       function () { goTo('portfolio'); });
+
+  // viewAllBtn opsiyonel — HTML'de yoksa hata vermez
+  var viewAllBtn = document.getElementById('viewAllBtn');
+  if (viewAllBtn) {
+    viewAllBtn.addEventListener('click', function () { goTo('portfolio'); });
+  }
 
   document.querySelectorAll('.work-card').forEach(function (card) {
     card.addEventListener('click', function () { goTo('portfolio'); });
